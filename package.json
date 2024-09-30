@@ -1,0 +1,41 @@
+{
+  "name": "helia-nextjs",
+  "version": "1.0.0",
+  "description": "Using Helia with nextjs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf ./dist ./.next",
+    "dev": "next dev",
+    "build": "next build",
+    "serve": "npm run dev",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "npm run build && test-browser-example test"
+  },
+  "dependencies": {
+    "@chainsafe/libp2p-noise": "^16.0.0",
+    "@chainsafe/libp2p-yamux": "^7.0.1",
+    "@helia/unixfs": "^3.0.7",
+    "@libp2p/bootstrap": "^11.0.6",
+    "@libp2p/identify": "^3.0.6",
+    "@libp2p/websockets": "^9.0.6",
+    "@multiformats/multiaddr": "^12.3.1",
+    "blockstore-core": "^5.0.2",
+    "datastore-core": "^10.0.2",
+    "helia": "^4.0.1",
+    "libp2p": "^2.1.4",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.32.1",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^14.1.0",
+    "interface-datastore": "^8.2.0",
+    "playwright": "^1.32.1",
+    "rimraf": "^5.0.0",
+    "test-ipfs-example": "^1.0.0"
+  }
+}
